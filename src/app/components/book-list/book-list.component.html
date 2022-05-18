@@ -1,0 +1,8 @@
+<h1>Book List</h1>
+<div *ngFor="let book of books">
+
+    <p>{{book.bookId}}
+        Title: {{book.title}} Rating: {{book.rating}} <a routerLink="/delete/{{book.bookId}}">Delete Title</a></p>
+</div>
+
+<a [routerLink]="['/new']">New Title</a>

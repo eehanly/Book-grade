@@ -1,0 +1,11 @@
+<h1>Add a New Book to the List </h1>
+<form (ngSubmit)="createBook()">
+    <span>Title:</span>
+    <input type="text" name="title" [(ngModel)]="newTitle.title">
+    <span>Rating (A-F)</span>
+    <input type="text" name="rating" [(ngModel)]="newTitle.rating">
+
+    <button>Create</button>
+    <a [routerLink]="['/']">Back to List</a>
+
+</form>

@@ -1,0 +1,11 @@
+<p>Are you sure you want to delete this book?</p>
+<div>
+    <p>{{book.bookId}} {{book.title}} {{book.rating}}</p>
+
+</div>
+
+<div>
+    <button class='btn' (click)="deleteBook(book.bookId)">Yes</button> <button class='btn' (click)="router.navigate(['/']);">No</button>
+</div> 
+
+ <!-- <button (click) = "deleteTask(task.id)">Delete Task</button> -->
